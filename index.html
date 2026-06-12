@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drive Wipe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #111111;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 30px 30px;
+    }
+
+    .hero {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .left {
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 72px;
+      margin: 0;
+      font-weight: 800;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #5f6b7a;
+      margin: 10px 0 30px;
+      font-weight: 400;
+    }
+
+    .intro {
+      font-size: 21px;
+      line-height: 1.5;
+      max-width: 560px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 22px;
+      margin-top: 35px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      border: 2px solid #1565c0;
+      border-radius: 10px;
+      padding: 22px 28px;
+      width: 230px;
+      text-decoration: none;
+      color: #111111;
+      background: #ffffff;
+      display: block;
+    }
+
+    .button.green {
+      border-color: #1f9d45;
+    }
+
+    .button strong {
+      display: block;
+      color: #1565c0;
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .button.green strong {
+      color: #1f9d45;
+    }
+
+    .button span {
+      color: #333333;
+      font-size: 16px;
+    }
+
+    .verify {
+      margin-top: 25px;
+      border: 1px solid #cfd6df;
+      border-radius: 10px;
+      padding: 22px 28px;
+      font-size: 20px;
+      max-width: 520px;
+    }
+
+    .right {
+      width: 390px;
+      text-align: center;
+    }
+
+    .mascot-area {
+      position: relative;
+      height: 340px;
+    }
+
+    .usb {
+      width: 120px;
+      height: 210px;
+      background: #1976bd;
+      color: white;
+      border: 4px solid #111111;
+      border-radius: 22px;
+      position: absolute;
+      left: 120px;
+      top: 65px;
+      font-weight: 800;
+      font-size: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      line-height: 1.05;
+    }
+
+    .usb:before {
+      content: "";
+      width: 70px;
+      height: 55px;
+      background: #dddddd;
+      border: 4px solid #111111;
+      border-bottom: none;
+      position: absolute;
+      top: -60px;
+      left: 21px;
+      border-radius: 6px 6px 0 0;
+    }
+
+    .eyes {
+      position: absolute;
+      top: 25px;
+      left: 22px;
+      font-size: 32px;
+    }
+
+    .smile {
+      position: absolute;
+      top: 65px;
+      left: 38px;
+      font-size: 30px;
+    }
+
+    .words {
+      margin-top: 70px;
+    }
+
+    .broom {
+      position: absolute;
+      left: 25px;
+      top: 115px;
+      font-size: 82px;
+      transform: rotate(-15deg);
+    }
+
+    .drive {
+      position: absolute;
+      right: 0;
+      top: 150px;
+      font-size: 90px;
+    }
+
+    .info-box {
+      border: 1px solid #cfd6df;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .info-box h3 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    .info-box ul {
+      padding-left: 22px;
+      line-height: 1.9;
+      font-size: 17px;
+    }
+
+    .credit {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 22px;
+      color: #1565c0;
+      font-weight: 800;
+    }
+
+    .simple {
+      text-align: center;
+      color: #5f6b7a;
+      font-size: 18px;
+      margin-top: 8px;
+    }
+
+    footer {
+      border-top: 1px solid #cfd6df;
+      margin-top: 35px;
+      padding-top: 20px;
+      color: #333333;
+      font-size: 15px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    @media (max-width: 850px) {
+      .hero {
+        flex-direction: column;
+      }
+
+      h1 {
+        font-size: 52px;
+      }
+
+      .right {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="hero">
+      <div class="left">
+        <h1>Drive Wipe</h1>
+        <h2>Local Drive Wipe &amp; Fresh Install</h2>
+
+        <p class="intro">
+          A simple, free tool to wipe a drive clean and make it ready for a fresh operating system install.
+          <br>
+          No ads. No telemetry. Always free.
+        </p>
+
+        <div class="buttons">
+          <a class="button" href="#">
+            <strong>Download ISO</strong>
+            <span>DriveWipe-v12.iso<br>Bootable ISO File</span>
+          </a>
+
+          <a class="button green" href="#">
+            <strong>Download USB</strong>
+            <span>Coming later<br>USB Image File</span>
+          </a>
+        </div>
+
+        <div class="verify">
+          <strong>Verify Download</strong><br>
+          Check SHA-256 checksum before use.
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="mascot-area">
+          <div class="broom">🧹</div>
+          <div class="usb">
+            <div class="eyes">👀</div>
+            <div class="smile">⌣</div>
+            <div class="words">DRIVE<br>WIPE</div>
+          </div>
+          <div class="drive">💽</div>
+        </div>
+
+        <div class="info-box">
+          <h3>What Drive Wipe Does</h3>
+          <ul>
+            <li>Wipes the selected drive</li>
+            <li>Clears old partitions and boot records</li>
+            <li>Prepares the drive for a fresh OS install</li>
+            <li>Works offline. No internet required</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="credit">Made by Harold and Mira.</div>
+    <div class="simple">This program is always free and simple.</div>
+
+    <footer>
+      <div>© 2026 Harold and Mira. All rights reserved.</div>
+      <div>Privacy: No Data Collected</div>
+    </footer>
+  </div>
+</body>
+</html>
